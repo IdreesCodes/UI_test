@@ -28,8 +28,8 @@ class _NavBarState extends State<NavBar> {
       body: IndexedStack(
         index: _selectedIndex,
         children: [
-          HomeScreen(), // Screen for the 1st icon
-          ProgressScreen(),
+          const HomeScreen(), // Screen for the 1st icon
+          const ProgressScreen(),
           Center(
             child: Text('Selected Index: $_selectedIndex'),
           ),
@@ -56,14 +56,14 @@ class _NavBarState extends State<NavBar> {
           ),
           BottomNavigationBarItem(
             icon: _selectedIndex == 2
-                ? Icon(Icons.notifications)
-                : Icon(Icons.notifications_none),
+                ? const Icon(Icons.notifications)
+                : const Icon(Icons.notifications_none),
             label: '',
           ),
           BottomNavigationBarItem(
             icon: _selectedIndex == 3
-                ? Icon(Icons.person)
-                : Icon(Icons.person_outline),
+                ? const Icon(Icons.person)
+                : const Icon(Icons.person_outline),
             label: '',
           ),
         ],
